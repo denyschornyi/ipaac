@@ -47,9 +47,9 @@ body{
     display: flex;
     justify-content: space-between;
 }
-.left-side{
+/* .left-side{
     margin-right: 40px;
-}
+} */
 .left-side h1{
     margin-bottom: 75px;
     font-size: 55px;
@@ -76,7 +76,7 @@ body{
 }
 
 .right-side-img{
-    height: 480px;
+    height: 450px;
 }
 /*AWWARDS*/
 .awwards img{
@@ -98,21 +98,46 @@ body{
     .container {
         max-width: 720px;	
     }
+    .main h1{
+        font-size: 45px;
+    }
+    .right-side-img{
+        height: 320px;
+    }
 }
   
 @media (max-width: 767px){
     .container {
         max-width: 540px;
     }
+    .header{
+        margin-bottom: 70px;
+    }
+    .left-side{
+        margin-bottom: 30px;
+    }
+    .main{
+        flex-direction: column;
+    }
+    .left-side h1{
+        font-size: 55px;
+    }
   }
 
   @media (max-width: 575px){
     .container{
+        max-width: 390px;
         margin: auto;
+    }
+    .header{
+        margin-bottom: 50px;
     }
     .header span{
         font-weight: 500;
         font-size: 18px;
+    }
+    .main h1{
+        font-size: 40px;
     }
   }
   
