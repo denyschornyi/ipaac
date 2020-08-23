@@ -3,7 +3,9 @@ const browserSync =  require('browser-sync').create();
 
 function browsersync(){
     browserSync.init({
-        server: {baseDir: 'app/'}
+        server: {baseDir: 'app/'},
+        notify: false,
+        online: true
     });
 }
  
