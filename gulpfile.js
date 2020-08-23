@@ -8,5 +8,12 @@ function browsersync(){
         online: true
     });
 }
+
+function startwatch(){
+
+}
  
 exports.browsersync = browsersync;
+
+
+exports.default = parallel(browsersync);
